@@ -2,8 +2,6 @@ package com.example.administrator.mvpdemo.service.presenter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
-
 
 import com.example.administrator.mvpdemo.service.entity.Book;
 import com.example.administrator.mvpdemo.service.manager.DataManager;
@@ -25,9 +23,11 @@ public class BookPresenter implements Presenter {
     private Context mContext;
     private BookView mBookView;
     private Book mBook;
-    public BookPresenter (Context mContext){
+
+    public BookPresenter(Context mContext) {
         this.mContext = mContext;
     }
+
     @Override
     public void onCreate() {
         manager = new DataManager(mContext);
@@ -41,7 +41,7 @@ public class BookPresenter implements Presenter {
 
     @Override
     public void onStop() {
-        if (mCompositeSubscription.hasSubscriptions()){
+        if (mCompositeSubscription.hasSubscriptions()) {
             mCompositeSubscription.unsubscribe();
         }
     }
@@ -53,20 +53,21 @@ public class BookPresenter implements Presenter {
 
     @Override
     public void attachView(View view) {
-        mBookView = (BookView)view;
+        mBookView = (BookView) view;
     }
 
     @Override
     public void attachIncomingIntent(Intent intetn) {
-}
-    public void getSearchBooks(String name,String tag,int start,int count){
-        mCompositeSubscription.add(manager.getSearchBooks(name,tag,start,count)
+    }
+
+    public void getSearchBooks(String name, String tag, int start, int count) {
+        mCompositeSubscription.add(manager.getSearchBooks(name, tag, start, count)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<Book>() {
                     @Override
                     public void onCompleted() {
-                        if (mBook != null){
+                        if (mBook != null) {
                             mBookView.onSuccess(mBook);
                         }
                     }
