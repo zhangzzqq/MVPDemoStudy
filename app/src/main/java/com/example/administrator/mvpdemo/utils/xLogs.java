@@ -36,7 +36,10 @@ public class xLogs {
     public void sing2() {
 
     }
+    protected void sing4() {
 
+
+    }
 
 }
 
