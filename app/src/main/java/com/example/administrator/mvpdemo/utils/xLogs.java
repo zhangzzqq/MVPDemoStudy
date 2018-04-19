@@ -41,5 +41,10 @@ public class xLogs {
 
     }
 
+
+    public  void song(){}
+
+    
+
 }
 
