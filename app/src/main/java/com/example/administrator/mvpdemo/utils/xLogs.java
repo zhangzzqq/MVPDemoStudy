@@ -23,14 +23,20 @@ public class xLogs {
 
     }
 
-    public void sing(){
 
+    public void sing() {
+    }
+
+
+    protected void sing3() {
 
     }
 
-    public void sing2(){
 
+    public void sing2() {
 
     }
+
+
 }
 
