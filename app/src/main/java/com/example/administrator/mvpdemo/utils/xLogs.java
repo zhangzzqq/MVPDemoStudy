@@ -60,6 +60,12 @@ public class xLogs {
 
     }
 
+    protected String strValue2(){
+
+        return "";
+    }
+
+
 
 }
 
