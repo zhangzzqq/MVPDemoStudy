@@ -23,6 +23,11 @@ public class xLogs {
 
     }
 
+    public void sing(){
+
+        
+    }
+
 
 }
 
