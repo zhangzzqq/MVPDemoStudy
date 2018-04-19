@@ -1,17 +1,23 @@
 package com.example.administrator.mvpdemo.utils;
 
-public class xLogs{
+public class xLogs {
 
 
-    public  void test(){
+    public void test() {
+
+
+    }
+
+
+    protected void test2() {
 
 
     }
 
-    protected  void test2(){
-
+    private void test3() {
 
     }
+
 
 }
 
