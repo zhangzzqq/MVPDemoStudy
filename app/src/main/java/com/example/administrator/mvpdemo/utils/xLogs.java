@@ -80,6 +80,11 @@ public class xLogs {
     }
 
 
+    public int  age(){
+
+        return 1;
+        
+    }
 }
 
 
