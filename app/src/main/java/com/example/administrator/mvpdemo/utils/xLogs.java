@@ -8,34 +8,20 @@ public class xLogs {
 
     }
 
-private void test3(){
+    private void test3() {
 
-}
+    }
 
-private void test4(){
+    private void test4() {
 
 
-}
+    }
 
 
     protected void test2() {
 
 
     }
-
-    private void test3() {
-
-    }
-
-
-private void test4(){
-
-
-}
-
-
-
-
 
 
 }
