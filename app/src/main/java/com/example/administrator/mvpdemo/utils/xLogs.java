@@ -25,9 +25,12 @@ public class xLogs {
 
     public void sing(){
 
-        
+
     }
 
+    public void sing2(){
 
+
+    }
 }
 
