@@ -8,6 +8,15 @@ public class xLogs {
 
     }
 
+private void test3(){
+
+}
+
+private void test4(){
+
+
+}
+
 
     protected void test2() {
 
