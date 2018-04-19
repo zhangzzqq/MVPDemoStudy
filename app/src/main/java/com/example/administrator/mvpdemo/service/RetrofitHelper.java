@@ -3,9 +3,6 @@ package com.example.administrator.mvpdemo.service;
 import android.content.Context;
 
 import com.google.gson.GsonBuilder;
-
-
-
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
