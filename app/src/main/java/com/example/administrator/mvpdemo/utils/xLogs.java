@@ -54,6 +54,14 @@ public class xLogs {
     private void song4(){}
 
     
+    public  String strValue(){
+
+        return "";
+
+    }
+
 
 }
+
+
 
