@@ -36,13 +36,18 @@ public class xLogs {
     public void sing2() {
 
     }
+
     protected void sing4() {
 
 
     }
 
 
-    public  void song(){}
+    public void song() {
+    }
+
+    protected void song2() {
+    }
 
     
 
