@@ -49,29 +49,32 @@ public class xLogs {
     protected void song2() {
     }
 
-    void song3(){}
 
-    private void song4(){}
+    void song3() {
+    }
 
-    
-    public  String strValue(){
+    private void song4() {
+    }
+
+
+    public String strValue() {
 
         return "";
 
     }
 
-    protected String strValue2(){
+    protected String strValue2() {
 
         return "";
     }
 
-    String strValue3(){
+    String strValue3() {
 
 
         return "";
     }
 
-    String strValue4(){
+    String strValue4() {
 
         return "";
     }
