@@ -71,7 +71,10 @@ public class xLogs {
         return "";
     }
 
-    
+    String strValue4(){
+
+        return "";
+    }
 
 
 }
