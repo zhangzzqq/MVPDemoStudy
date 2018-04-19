@@ -65,6 +65,13 @@ public class xLogs {
         return "";
     }
 
+    String strValue3(){
+
+
+        return "";
+    }
+
+    
 
 
 }
