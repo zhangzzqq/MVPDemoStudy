@@ -1,0 +1,21 @@
+pick 4982dc9 添加song2()方法
+pick 36e1f1b 添加song4()方法
+pick 06aff76 添加song4()方法
+
+# Rebase 98f5109..06aff76 onto 98f5109 (3 command(s))
+#
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
