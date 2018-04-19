@@ -8,6 +8,10 @@ public class xLogs{
 
     }
 
+    protected  void test2(){
+
+
+    }
 
 }
 
