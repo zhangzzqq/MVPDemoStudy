@@ -3,8 +3,8 @@ package com.example.administrator.mvpdemo.utils;
 public class xLogs {
 
 
-    private String str="小米";
-    
+    private String str = "小米";
+
     public void test() {
 
 
@@ -76,60 +76,61 @@ public class xLogs {
         return "";
     }
 
-        String strValue4() {
+    String strValue4() {
 
         return "";
     }
 
 
-    public int  age(){
-
-        return 1;
-        
-    }
-
-    public int  cat(){
+    public int age() {
 
         return 1;
 
     }
 
-    public int  cattest(){
+    public int cat() {
 
         return 1;
 
     }
 
-      public int  cattest2(){
+    public int cattest() {
+
+        return 1;
+
+    }
+
+    public int cattest2() {
 
         return 1;
 
     }
 
 
-    public int  cattest3(){
-
-        return 1;
-
-
-    }
-
-
-    public int  cattest4(){
+    public int cattest3() {
 
         return 1;
 
 
     }
 
-    public int  cattest5(){
+
+    public int cattest4() {
 
         return 1;
 
 
     }
 
-    public int  cattest6(){
+    public int cattest5() {
+
+        return 1;
+
+
+    }
+
+
+    public int cattest6() {
 
         return 1;
 
