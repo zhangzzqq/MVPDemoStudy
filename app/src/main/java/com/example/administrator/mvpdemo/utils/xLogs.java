@@ -100,11 +100,21 @@ public class xLogs {
 
     }
 
-    public int  cattest2(){
+      public int  cattest2(){
 
         return 1;
 
     }
+
+
+    public int  cattest3(){
+
+        return 1;
+
+
+    }
+
+
 
 
 }
