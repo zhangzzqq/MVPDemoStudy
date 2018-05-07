@@ -3,6 +3,8 @@ package com.example.administrator.mvpdemo.utils;
 public class xLogs {
 
 
+    private String str="小米";
+    
     public void test() {
 
 
@@ -91,6 +93,15 @@ public class xLogs {
         return 1;
 
     }
+
+    public int  cattest(){
+
+        return 1;
+
+    }
+
+
+
 }
 
 
