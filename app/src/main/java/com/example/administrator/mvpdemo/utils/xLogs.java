@@ -115,6 +115,19 @@ public class xLogs {
     }
 
 
+    public int  cattest4(){
+
+        return 1;
+
+
+    }
+
+    public int  cattest5(){
+
+        return 1;
+
+
+    }
 
 
 }
