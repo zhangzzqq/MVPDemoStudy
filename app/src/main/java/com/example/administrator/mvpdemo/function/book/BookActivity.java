@@ -8,21 +8,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.mvpdemo.R;
-import com.example.administrator.mvpdemo.dagger.component.DaggerBookComponent;
 import com.example.administrator.mvpdemo.entity.Book;
 import com.example.administrator.mvpdemo.function.book.presenter.BookPresenter;
 import com.example.administrator.mvpdemo.function.book.view.BookView;
-
-import javax.inject.Inject;
 
 public class BookActivity extends AppCompatActivity {
 
     private TextView text;
     private Button button;
-//   private BookPresenter mBookPresenter = new BookPresenter(this);
+   private BookPresenter mBookPresenter = new BookPresenter(this);
 
-    @Inject
-    BookPresenter mBookPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +34,7 @@ public class BookActivity extends AppCompatActivity {
             }
         });
 
-        DaggerBookComponent.create().injectActivity(this);
-
+        mBookPresenter.onCreate();
         mBookPresenter.attachView(mBookView);
 
     }
