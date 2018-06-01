@@ -1,9 +1,9 @@
-package com.example.administrator.mvpdemo.service.entity;
+package com.example.administrator.mvpdemo.entity;
 
 import java.util.List;
 
 /**
- * Created by win764-1 on 2016/12/12.
+ *
  */
 
 public class Book {
@@ -19,6 +19,7 @@ public class Book {
     private int count;
     private int start;
     private int total;
+
     /**
      * rating : {"max":10,"numRaters":209472,"average":"9.0","min":0}
      * subtitle :

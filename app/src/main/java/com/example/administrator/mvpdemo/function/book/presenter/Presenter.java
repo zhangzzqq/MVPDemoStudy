@@ -1,16 +1,17 @@
-package com.example.administrator.mvpdemo.service.presenter;
+package com.example.administrator.mvpdemo.function.book.presenter;
 
 
 import android.content.Intent;
 
-import com.example.administrator.mvpdemo.service.view.View;
+import com.example.administrator.mvpdemo.function.book.view.View;
 
 
 /**
- * Created by win764-1 on 2016/12/12.
+ *
  */
 
 public interface Presenter {
+
     void onCreate();
 
     void onStart();
@@ -22,4 +23,5 @@ public interface Presenter {
     void attachView(View view);
 
     void attachIncomingIntent(Intent intent);
+
 }

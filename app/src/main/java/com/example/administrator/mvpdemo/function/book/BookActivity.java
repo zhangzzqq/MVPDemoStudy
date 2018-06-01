@@ -1,4 +1,4 @@
-package com.example.administrator.mvpdemo.ui.activity;
+package com.example.administrator.mvpdemo.function.book;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,30 +8,43 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.mvpdemo.R;
-import com.example.administrator.mvpdemo.service.entity.Book;
-import com.example.administrator.mvpdemo.service.presenter.BookPresenter;
-import com.example.administrator.mvpdemo.service.view.BookView;
+import com.example.administrator.mvpdemo.dagger.component.DaggerBookComponent;
+import com.example.administrator.mvpdemo.entity.Book;
+import com.example.administrator.mvpdemo.function.book.presenter.BookPresenter;
+import com.example.administrator.mvpdemo.function.book.view.BookView;
 
-public class MainActivity extends AppCompatActivity {
+import javax.inject.Inject;
+
+public class BookActivity extends AppCompatActivity {
 
     private TextView text;
     private Button button;
-    private BookPresenter mBookPresenter = new BookPresenter(this);
+//   private BookPresenter mBookPresenter = new BookPresenter(this);
+
+    @Inject
+    BookPresenter mBookPresenter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        text = (TextView)findViewById(R.id.text);
-        button = (Button)findViewById(R.id.button);
+
+        text = (TextView) findViewById(R.id.text);
+        button = (Button) findViewById(R.id.button);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mBookPresenter.getSearchBooks("金瓶梅", null, 0, 1);
+                mBookPresenter.getSearchBooks(getString(R.string.title), null, 0, 1);
             }
         });
-        mBookPresenter.onCreate();
+
+        DaggerBookComponent.create().injectActivity(this);
+
         mBookPresenter.attachView(mBookView);
+
     }
+
 
     private BookView mBookView = new BookView() {
         @Override
@@ -41,14 +54,15 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onError(String result) {
-            Toast.makeText(MainActivity.this,result, Toast.LENGTH_SHORT).show();
+            Toast.makeText(BookActivity.this, result, Toast.LENGTH_SHORT).show();
         }
     };
+
     @Override
-    protected void onDestroy(){
+    protected void onDestroy() {
         super.onDestroy();
         mBookPresenter.onStop();
     }
 
-    public void test(){}
+
 }

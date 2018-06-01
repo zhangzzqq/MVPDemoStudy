@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MVPDemo</string>
+    <string name="title">史记</string>
 </resources>
