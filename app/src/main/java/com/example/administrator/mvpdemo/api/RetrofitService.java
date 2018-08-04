@@ -1,10 +1,9 @@
-package com.example.administrator.mvpdemo.service;
+package com.example.administrator.mvpdemo.api;
 
 
 
 import com.example.administrator.mvpdemo.service.entity.Book;
 
-import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 import rx.Observable;

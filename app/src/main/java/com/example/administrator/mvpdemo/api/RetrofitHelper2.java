@@ -1,10 +1,8 @@
-package com.example.administrator.mvpdemo.service;
+package com.example.administrator.mvpdemo.api;
 
 import android.content.Context;
 
 import com.google.gson.GsonBuilder;
-
-
 
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
@@ -15,21 +13,21 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by win764-1 on 2016/12/12.
  */
 
-public class RetrofitHelper {
+public class RetrofitHelper2 {
 
     private Context mCntext;
 
     OkHttpClient client = new OkHttpClient();
     GsonConverterFactory factory = GsonConverterFactory.create(new GsonBuilder().create());
-    private static RetrofitHelper instance = null;
+    private static RetrofitHelper2 instance = null;
     private Retrofit mRetrofit = null;
-    public static RetrofitHelper getInstance(Context context){
+    public static RetrofitHelper2 getInstance(Context context){
         if (instance == null){
-            instance = new RetrofitHelper(context);
+            instance = new RetrofitHelper2(context);
         }
         return instance;
     }
-    private RetrofitHelper(Context mContext){
+    private RetrofitHelper2(Context mContext){
         mCntext = mContext;
         init();
     }
